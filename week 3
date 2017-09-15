@@ -1,1 +1,81 @@
+<!DOCTYPE html>
 
+<html>
+
+<head>
+  <title> Martin Scorsese </title>
+</head>
+
+<body>
+ <!-- Header -->
+  <header> 
+    <img id="top" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNDA4Nzk3N15BMl5BanBnXkFtZTcwNDYzMjMxMw@@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Martin Scorsese">
+    
+    <img src="http://www.chinadaily.com.cn/world/2007-02/26/xin_09020426132624717191193.jpg" height="315px" width="auto" alt="Winning an Oscar">
+
+    <h1> Martin Scorsese </h1>
+    <h3> A Creative Influential </h3>
+  </header>  
+
+  <hr>
+
+<!-- About -->
+  <section>
+   <h2> About </h2>
+    <p> <a href="https://en.wikipedia.org/wiki/Martin_Scorsese" target="_blank"> Martin Scorsese </a> is an American director, producer, screenwriter, and film historian. He was born in 1942 and has had a career that spans more than 50 years. <br> He is the founder of <i> The Film Foundation </i> and the <i> World Cinema Foundation </i>. He has directed a variety of films, starring incredible actors. </p>
+
+    <figure>
+      <img src="../Class Code/Influential-Imgs/Scorsese-and-Leo.jpg" height="300px" width="auto" alt="Leo and Scorsese">
+      <figcaption> Leonardo DiCaprio has often starred in his movies! <br>
+      Photo is from <a href="http://osagenews.org/en/" target="_blank"> Osage News </a> </figcaption>
+    </figure>
+
+    <!-- figure of oscar picture 
+    <figure>
+      <img src="http://www.chinadaily.com.cn/world/2007-02/26/xin_09020426132624717191193.jpg" height="300px" width="auto" alt="Winning an Oscar">
+      <figcaption> Scorsese winning an Oscar for <i> The Departed </i> in 2007. <br> 
+     Photo is from <a href="http://www.chinadaily.com.cn" target="_blank"> ChinaDaily.com </a> </figcaption>
+    </figure>   
+  </section>
+-->
+  <hr>
+  
+  <section>
+    <h2> My favorite films of his include: </h2>
+      <ol>
+        <li> <strong> Goodfellas </strong> (1990) </li>
+        <li> <strong> Gangs of New York </strong> (2002) </li>
+        <li> <strong> The Aviator </strong> (2004) </li>
+        <li> <strong> The Departed </strong> (2006) </li>
+        <li> <strong> Shutter Island </strong> (2010) </li>    
+        <li> <strong> The Wolf of Wall Street </strong> (2013) </li>
+      </ol>  
+  </section>    
+ 
+
+  <hr>
+
+  <!-- trailers of movies he directed -->
+   <section>
+     <h2> Movie Trailers </h2>
+     <!-- GoodFellas -->
+     <iframe width="400" height="250" src="https://www.youtube.com/embed/qo5jJpHtI1Y" frameborder="0" allowfullscreen></iframe> 
+     <!-- Gangs of New York -->
+     <iframe width="400" height="250" src="https://www.youtube.com/embed/qHVUPri5tjA" frameborder="0" allowfullscreen></iframe> 
+     <!-- The Aviator -->
+     <iframe width="400" height="250" src="https://www.youtube.com/embed/FebPJlmgldE" frameborder="0" allowfullscreen></iframe> 
+     <!-- The Departed -->
+     <iframe width="400" height="250" src="https://www.youtube.com/embed/iojhqm0JTW4" frameborder="0" allowfullscreen></iframe> 
+     <!-- Shutter Island -->
+     <iframe width="400" height="250" src="https://www.youtube.com/embed/5iaYLCiq5RM" frameborder="0" allowfullscreen></iframe> 
+     <!-- The Wolf of Wall Street -->
+     <iframe width="400" height="250" src="https://www.youtube.com/embed/iszwuX1AK6A" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+
+  <footer>
+   <a href="#top"> <button type="button"> Go to Top </button> </a>
+   <p> <i> Created By: </i> William Kimak </p>
+  </footer>
+
+</body>
