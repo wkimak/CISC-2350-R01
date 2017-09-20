@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title> About </title>
+  
+  <!-- STYLING -->
+  <style>
+   body{
+      background-color: rgba(150, 183, 86, 0.4);
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    nav a{
+    	margin-right: 20px;
+    }
+
+    header{
+    	text-align: center;
+    }
+
+    table{
+    	margin-top: 15px;
+    }
+ 
+    input, label{
+    	display: block;
+    	font-size: 0.8em;
+    }
+
+  </style>
+</head>
+
+<!-- BODY -->
+
+<body>
+<!-- navigation -->
+<nav id="top">
+  <a href="index.html"> Home Page </a>
+  <a href="index2.html"> About Page </a>
+</nav>
+
+<!-- Header -->
+<header>
+  <h1> ABOUT </h1>
+</header>
+
+<section = id="media">
+  <!-- Scorsese Podcast -->
+  <h3> Scorsese and Macklin Interview </h3>
+  <audio controls>
+    <source src= "http://tonymacklin.net/audio/scorsese.mp3" type="audio/mp3">
+  </audio>
+  <!-- Iframe Video -->
+  <h3> Interview with Martin Scorsese </h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/H0C1jh5NuwQ" frameborder="0" allowfullscreen></iframe>
+ <!-- Local Video -->
+  <h3> Wolf of Wallstreet, Behind The Scenes </h3>
+  <video width="560" height="315" controls>
+    <source src="influential-vids/Wolf-of-Wallstreet.mp4" type="video/mp4">
+  </video>
+</section>
+
+<hr>
+
+<!-- Academy Awards Table -->
+<section>
+  <table>
+    <h3> Academy Awards </h3>
+   	  <tr>
+         <th> Year </th>
+         <th> Film </th>
+         <th> Academy Awards </th>
+   	</tr>
+   	<tr>
+   	  <td> 1974 </td>
+   	  <td> <i> Alice Doesn't Live Here Anymore </i> </td>
+   	  <td> 1 </td>
+   	</tr>
+   	<tr>  
+   	  <td> 1980 </td>
+   	  <td> <i> Raging Bull </i> </td>
+   	  <td> 2 </td>
+   	</tr>
+   	<tr>  
+   	  <td> 1986 </td>
+   	  <td> <i> The Color of Money </i> </td>
+   	  <td> 1 </td>
+   	</tr>
+   	<tr>  
+   	  <td> 1990  </td>
+   	  <td> <i> GoodFellas </i> </td>
+   	  <td> 1 </td>
+   	</tr>  
+   	<tr>
+   	  <td> 1993 </td>
+   	  <td> <i> The Age of Innocence </i> </td>
+   	  <td> 1 </td>
+   	</tr>
+   	<tr>  
+   	  <td> 2004 </td>
+   	  <td> <i> The Aviator </i> </td>
+   	  <td> 5 </td>
+   	</tr>
+   	<tr>  
+   	  <td> 2006 </td>
+   	  <td> <i> The Departed </i> </td>
+   	  <td> 4 </td>
+   	</tr>
+   	<tr>  
+   	  <td> 2011 </td>
+   	  <td> <i> Hugo </i> </td>
+   	  <td> 5 </td>
+   	</tr>
+   </table>
+
+<hr>
+
+<!-- form -->
+<footer>
+  <form>
+    <h2> For More Information: </h2>
+    <!-- Email -->
+    <input type="text" placeholder="Email">
+    <!-- Phone # -->
+    <input type="text" placeholder="Phone Number">
+     <!-- CheckBox -->
+    <label for="agree"> Agree to Terms/Conditions </label>
+    <input type="checkBox" name="agree">
+    <!-- submit btn -->
+    <button type="submit"> Submit </button>
+  </form>
+  <a href="#top"> <button type="button"> Go to Top </button> </a>
+</footer>
+
+</body>
+
+</html>
