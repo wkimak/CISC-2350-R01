@@ -1,0 +1,161 @@
+   /* Page 1 and Page 2*/
+     *{
+      box-sizing: border-box;
+     }
+
+     html, body{
+      height: 100%;
+      width: 100%;
+     }
+
+     body{
+      background-color: rgba(150, 183, 86, 0.4);
+      padding-top: 100px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+   /* nav styling */
+    nav{
+      background-color: rgba(255,255,255,0.8);
+      border: 1px solid green;
+      height: 10%;
+      width: 100%;
+      position: fixed;
+      top: 5px;
+      margin: -10px -40px;
+    }
+
+    nav ul{
+      list-style: none;
+    }
+
+     nav li, nav a{
+      display: inline-block;
+      text-decoration: none;
+      color: green;
+      font-family: cursive;
+      font-size: 1.3em;
+      margin-right: 30px;
+     }
+
+    /* "Martin Scorsese text" */
+     nav p{
+      font-size: 1.3em;
+      font-family: cursive;
+      position: absolute;
+      top: 0px;
+      right: 100px;
+     }
+
+   /* Go to Top Button */
+     button{
+      height: 30px;
+      width: 100px;
+      font-size: 1.2em;
+      border-radius: 5px;
+      background-color: white;
+      float: right;
+     }
+
+    
+
+    /* Page 1 */
+
+    #page1 header, header img{
+      text-align: center;
+      display: block;
+      margin: auto;
+      border-radius: 5px;
+    }
+
+    #page1 section > p{
+      text-align: center;
+    }
+
+    #page1 #figures{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-flow: wrap;
+    }
+
+     #page1 #trailers{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-flow: wrap;
+     }
+
+
+    /* Page 2 */
+
+
+    #page2 header{
+      text-align: center;
+    }
+
+    #page2 #big-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    #page2 #table-container{
+      background-color: rgba(20,200,60,0.6);
+      width: 500px;
+      height: 350px;
+      padding: 20px;
+      position: relative;
+      top: 50px;
+  
+    }
+
+    #page2 #family{
+      position: relative;
+      top: 70px;
+      right: 50px;
+    }
+    
+    #page2 table{
+      border: 1px solid black;
+    }
+
+    #page2 form, #page2 input{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #submitBtn{
+      margin-top: 20px;
+      height: 50px;
+      width: 80px;
+    }
+ 
+    #page2 input, label{
+      display: block;
+      font-size: 0.8em;
+    }
+
+     #page2 button{
+        position: bottom-right;
+      }
+
+
+    /* media queries */
+    @media only screen and (max-width: 1125px){
+      footer form{
+        position: relative;
+        top: 400px;
+      }
+      #page2 button{
+        display: none;
+      }
+      #page2 hr{
+        visibility: hidden;
+      }
+
+    }
+    }
