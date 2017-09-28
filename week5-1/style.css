@@ -93,29 +93,40 @@
 
     #page2 header{
       text-align: center;
+      color: green;
     }
 
-    #page2 #big-container{
+    #song{
+      position: absolute;
+      top: 70px;
+    }
+
+    #big-container{
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
       flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    #page2 h3{
+      text-align: center;
     }
 
     #page2 #table-container{
       background-color: rgba(20,200,60,0.6);
-      width: 500px;
-      height: 350px;
+      width: 475px;
+      height: 315px;
       padding: 20px;
-      position: relative;
-      top: 50px;
-  
+      margin-top: 15px;
     }
 
-    #page2 #family{
-      position: relative;
-      top: 70px;
-      right: 50px;
+    #interview, #wallstreet{
+      display: inline-block;
+    }
+
+    #table-container, #family{
+      display: inline-block;
+
     }
     
     #page2 table{
@@ -146,10 +157,6 @@
 
     /* media queries */
     @media only screen and (max-width: 1125px){
-      footer form{
-        position: relative;
-        top: 400px;
-      }
       #page2 button{
         display: none;
       }
