@@ -29,14 +29,6 @@ header h1{
   font-family: 'Andika', sans-serif;
 }
 
-header p{
-	position: absolute;
-	top: 100px;
-	right: 5%;
-	font-size: 18px;
-	color: rgb(53,149,183);
-	font-family: 'Andika', sans-serif;
-}
 
 /* Nav */
 nav{
@@ -47,9 +39,20 @@ nav{
 
 nav ul, nav a, nav li{
 	list-style: none;
+	text-decoration: none;
+	font-weight: bold;
 	display: inline-block;
 	color: white;
 	margin-right: 40px;
+}
+
+nav p{
+	position: absolute;
+	top: 150px;
+	right: 8%;
+	font-size: 18px;
+	color: white;
+	font-family: 'Andika', sans-serif;
 }
 
 /* Footer */
@@ -86,7 +89,6 @@ footer p:last-child{
 
 /* #What is ClothBot?, Why ClothBot? */
 #what, #why{
-	height: 300px;
 	width: 100%;
 	text-align: center;
 	padding: 20px 320px;
@@ -100,11 +102,9 @@ footer p:last-child{
 /*Features container */
 #features{
 	background-color: rgba(30,87,153,0.3);
-	height: 400px;
 	width: 100%;
 	padding: 50px 200px;
 	box-shadow: 25px 10px 30px black;
-	margin-top: -30px;
 }
 
 /* Features images */
@@ -114,7 +114,7 @@ footer p:last-child{
 	flex-direction: row;
 	overflow: scroll;
 	position: absolute;
-	top: 478px;
+	top: 443px;
 	left: 50%;
 }
 
@@ -136,9 +136,9 @@ footer p:last-child{
 
 /* What is 3D Printing?, Display Screen */
  #printing, #display-screen{
-   height: 100px;
    width: 100%;
    padding-top: 20px;
+   padding-bottom: 20px;
    padding-left: 50px;
    padding-right: 50px;
    text-align: left;
@@ -152,7 +152,7 @@ footer p:last-child{
 	transform: skewY(1deg);
 	padding-left: 50px;
 	padding-right: 50px;
-	margin-top: 250px; 
+	margin-top: 120px;
 	box-shadow: 25px 10px 30px;
 }
 
@@ -165,9 +165,9 @@ footer p:last-child{
 	padding-top: 2px;
 	padding-left: 50px;
 	padding-right: 50px;
-	position: relative;
+	position: absolute;
 	left: 55%;
-	bottom: 50px;
+	top: 1000px;
 	box-shadow: 25px 10px 30px;
 	transform: rotate(-2deg);
 	overflow: scroll;
@@ -288,8 +288,8 @@ footer p:last-child{
 	margin-top: 5px;
 	width: 125px;
 	height: 40px;
-	position: relative;
-	left: 225px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Input dimensions */
@@ -302,12 +302,66 @@ footer p:last-child{
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1200px){
-	#what .content, #why .content {
-		width: 500px;
+@media only screen and (max-width: 1024px){
+    
+    /* HOME Page */
+    nav{
+    	height: 100px;
+    }
+    
+    /* Make Nav block */
+    nav li{
+    	display: block;
+    }
+
+     /* adjust section paddings */
+	#what, #why{
+		padding: 50px 50px;
 	}
 
-	#what, #why{
-		padding: 20px 200px;
+	/* Hide images */
+	#feature-imgs{
+	display: none;
 	}
+
+	/* TECH Page */
+
+   /* center section text */
+   #printing .content, #display-screen .content{
+   	margin-left: 30%;
+   }
+
+	/* Hide figures */
+	#printing-video, #measurements img, #touch-video{
+		display: none;
+	}
+     
+     /* Move How-it-works container */
+	#how-it-works{
+		position: absolute;
+		left: 10%;
+		top: 600px;
+		background-color: white;
+	}
+
+	
+
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px){
+	/* HOME Page */
+	/* adjust seciton paddings */
+	#what, #why{
+		padding: 50px 50px;
+	}
+
+   /* align images to container */
+	#feature-imgs{
+		position: absolute;
+		top: 485px;
+	}
+
+
+}
+
+
