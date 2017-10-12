@@ -343,7 +343,13 @@ footer p:last-child{
 		top: 600px;
 		background-color: white;
 	}
-
+        
+    /* move measurements text up */
+        #measurements .content{
+	  position: absolute;
+	  left: 50%;
+	  top: 0px;
+	}
 	
 
 }
