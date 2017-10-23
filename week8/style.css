@@ -1,0 +1,91 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+/* Title */
+header{
+	background-color: rgba(150,50,50,0.2);
+	text-align: center;
+	font-size: 16px;
+	width: 100%;
+	height: 150px;
+	margin-top: -20px;
+	margin-bottom: 20px;
+	padding-top: 5px;
+}
+
+/* line height of list items */
+#values li{
+  line-height: 30px;
+}
+
+/* set background images and display for each div */
+#normal, #multiply, #screen, #overlay, #color-dodge, #color-burn, #lighten, #darken{
+	background-image: url("https://media.timeout.com/images/101705313/630/472/image.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: orange;
+	height: 200px;
+	width: 275px;
+	display: inline-block;	
+}
+
+/* individuals background-blend-modes */
+#multiply{
+background-blend-mode: multiply;	
+}
+
+#screen{
+background-blend-mode: screen;	
+}
+
+#overlay{
+background-blend-mode: overlay;		
+}
+
+#color-dodge{
+background-blend-mode: color-dodge;	
+}
+
+#color-burn{
+	background-blend-mode: color-burn;
+}
+
+#lighten{
+	background-blend-mode: lighten;
+}
+
+#darken{
+	background-blend-mode: darken;
+}
+
+/* ------------- backface-visibility -----------*/
+#effect .front, #effect .back{
+	background-color: orange;
+	width: 25%;
+	height: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px 10px;
+}
+
+
+#effect:hover{
+animation: rotate;
+}
+
+@keyframes rotate{
+	from{transform: rotateY(0deg);}
+	to {transform: rotateY(180deg);}
+}
+
+#effect{
+	animation-name: rotate;
+	animation-duration: 7s; 
+	animation-iteration-count: infinite;
+}
