@@ -64,7 +64,7 @@ background-blend-mode: color-dodge;
 	background-blend-mode: darken;
 }
 
-/* ------------- backface-visibility -----------*/
+/* ------------- transform rotateY -----------*/
 #effect .front, #effect .back{
 	background-color: orange;
 	width: 25%;
