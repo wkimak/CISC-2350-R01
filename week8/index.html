@@ -1,1 +1,63 @@
 
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title> CSS Tricks  </title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+  <h1> background-blend-mode <br> &amp <br> transform: rotateY() </h1>
+</header>  
+
+<!-- background-blend-mode description -->
+<p> The background-blend-mode property allows a background image to blend in with its background color. Text on top of the background image is not affected. We can also use multiple linear gradients and each of them can have their own blend mode. </p>
+
+<!-- Values -->
+<p> Values include: </p>
+<ul id="values">
+  <li> <b> normal </b> - background-color will not bleed through the background-image. </li>
+  <li> <b> multiply </b> - background-image and background-color are multiplied. This leads to a darker color. </li>
+  <li> <b> screen </b> - both image and color is inverted, multiplied, and then inverted again. </li>
+  <li> <b> overlay </b> - background-color is mixed with the background-image to reflect the lightness or darkness of the backdrop </li>
+  <li> <b> darken </b> - if the background-image is darker than the background-color then the image is replaced, otherwise it is left as it was. </li>
+  <li> <b> lighten </b> - if background-image is lighter than the background-color then the image is replaced, otherwise it is left as it was </li>
+  <li> <b> color-dodge </b> - background-color is divided by the inverse of the background-image </li>
+  <li> <b> color-burn </b> - background-color is inverted, divided by the background-image and inverted again. </li>
+  <li> Other values include <b> hard-light </b>, <b> soft-light </b>, <b> difference </b>, <b> exclusion </b>, <b> hue </b>, <b> saturation </b>, <b> color </b>, and <b> luminosity </b>. </li>
+</ul>
+
+<!-- Individual background image divs -->
+<div id="normal"> normal </div>
+<div id="multiply"> multiply </div>
+<div id="screen"> screen </div>
+<div id="overlay"> overlay </div>
+<div id="color-dodge"> color-dodge </div>
+<div id="color-burn"> color-burn </div>
+<div id="lighten"> lighten </div>
+<div id="darken"> darken </div>
+
+
+<hr> 
+
+<!-- transform: rotateY -->
+<p> The transfrom property can be used with the value of rotate. If you just want to rotate an element on its Y axis, you can set the value to rotateY(..deg); You can do the same for the X axis using rotateX(..deg); You can mix in transform properties with CSS animations to add awsome affects. </p>
+
+
+<div id="effect">
+  <p class="front"> I am using transform: rotateY(180deg) within a CSS3 keyframes animation. </p>
+  <p class="back"> I am using transform: rotateY(180deg) within a CSS3 keyframes animation. </p>
+</div>
+
+
+
+</body>
+
+
+
+</html>
