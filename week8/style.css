@@ -3,7 +3,6 @@
 }
 
 html, body{
-	height: 100%;
 	width: 100%;
 }
 
@@ -64,24 +63,26 @@ background-blend-mode: color-dodge;
 	background-blend-mode: darken;
 }
 
+hr{
+	margin-top: 20px;
+}
+
 /* ------------- transform rotateY -----------*/
-#effect .front, #effect .back{
+#effect .front{
 	background-color: orange;
 	width: 25%;
 	height: 25%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 50px;
 	padding: 40px 10px;
+	animation-name: rotate;
+	animation-duration: 7s; 
+	animation-iteration-count: infinite;
 }
 
 
 @keyframes rotate{
 	from{transform: rotateY(0deg);}
 	to {transform: rotateY(180deg);}
-}
-
-#effect{
-	animation-name: rotate;
-	animation-duration: 7s; 
-	animation-iteration-count: infinite;
 }
