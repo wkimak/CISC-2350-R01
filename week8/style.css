@@ -75,10 +75,6 @@ background-blend-mode: color-dodge;
 }
 
 
-#effect:hover{
-animation: rotate;
-}
-
 @keyframes rotate{
 	from{transform: rotateY(0deg);}
 	to {transform: rotateY(180deg);}
