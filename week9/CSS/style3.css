@@ -1,0 +1,73 @@
+*{
+	box-sizing: border-box;
+}
+
+/* Body Styling */
+ body{
+	width: 100%;
+	margin-top: -10px;
+}
+
+/* header styling */
+header{
+	height: 175px;
+	background-color: rgb(183,24,24);
+	text-align: center;
+	color: white;
+	padding-top: 25px;
+}
+
+/* navbar styling */
+nav{
+	background-color: black;
+}
+
+/* nav list styling */
+nav ul, nav li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+/* nav a tag styling */
+nav a{
+	text-decoration: none;
+	color: rgb(183,24,24);
+}
+
+/* Text content container */
+section{
+	background-color: rgb(183,24,24);
+	width: 50%;
+	height: 800px;
+	padding: 20px 30px;
+	color: white;
+	float: left;
+}
+
+section p{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+/* hr tag style */
+hr{
+	border: 1px groove black;
+	width: 75%;
+}
+
+/* Image styling */
+#images{
+	background-color: black;
+	width: 50%;
+	height: 800px;
+	float: right;
+}
+
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border-radius: 10px;
+}
