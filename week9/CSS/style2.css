@@ -1,0 +1,75 @@
+*{
+	box-sizing: border-box;
+}
+
+/* Body Styling */
+ body{
+	width: 100%;
+	margin-top: -10px;
+	padding-left: 75px;
+	padding-right: 75px;
+	background-color: rgba(0,0,0,0.7);
+}
+
+/* header styling */
+header{
+	height: 175px;
+	background-color: rgb(183,24,24);
+	text-align: center;
+	color: white;
+	padding-top: 25px;
+}
+
+/* navbar styling */
+nav{
+	background-color: black;
+}
+
+/* nav list styling */
+nav ul, nav li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+/* nav a tag styling */
+nav a{
+	text-decoration: none;
+	color: rgb(183,24,24);
+}
+
+
+/* TEXT content styling */
+
+section{
+	margin-top: 35px;
+}
+
+section p{
+	color: white;
+	width: 450px;
+}
+
+#para1, #para2, #para4{
+	background-color: black;
+	width: 45%;
+	padding: 20px;
+}
+
+#para1, #para4{
+	float: left;
+
+}
+
+#para1{
+	margin-bottom: 200px;
+}
+
+#para2{
+	float: right;
+	margin-top: 200px;
+}
+
+img{
+	margin-left: auto;
+}
