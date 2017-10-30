@@ -1,0 +1,76 @@
+
+
+*{
+	box-sizing: border-box;
+}
+
+/* Body Styling */
+ body{
+	width: 100%;
+	margin-top: -10px;
+	height: 100%;
+	background-color: rgba(0,0,0,0.9);
+}
+
+/* header styling */
+header{
+	height: 175px;
+	background-color: rgb(183,24,24);
+	text-align: center;
+	color: white;
+	padding-top: 25px;
+}
+
+/* navbar styling */
+nav{
+	background-color: black;
+}
+
+/* nav list styling */
+nav ul, nav li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+/* nav a tag styling */
+nav a{
+	text-decoration: none;
+	color: rgb(183,24,24);
+}
+
+
+/* Main section of text content */
+section{
+	column-count: 3;
+	column-gap: 40px;
+	padding: 70px 50px;
+	vertical-align: top;
+}
+
+
+section p{
+	color: white;
+	
+}
+
+/* hr tag styling */
+hr{
+border: 1px solid rgb(183,24,24);
+width: 75%;
+}
+
+/* Image styling */
+#images{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+#images img{
+	margin-right: 40px;
+	border: 1px solid white;
+	border-radius: 10px;
+}
