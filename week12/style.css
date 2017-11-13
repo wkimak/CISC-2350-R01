@@ -1,0 +1,35 @@
+    *{
+      box-sizing: border-box;
+    }
+
+      html, body{
+        height: 100%;
+        width: 100%;
+      }
+      
+     /* Header styling */
+      header{
+        background-image: url("https://blackrockdigital.github.io/startbootstrap-landing-page/img/intro-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        margin-top: 5%;
+        padding-top: 20%;
+        color: black;
+      }
+
+      hr{
+        background-color: orange;
+        width: 40%;
+      }
+   
+   /* footer styling */
+      footer{
+        background-image: url("https://blackrockdigital.github.io/startbootstrap-landing-page/img/banner-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 40%;
+      }
