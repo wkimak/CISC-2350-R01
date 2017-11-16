@@ -30,7 +30,7 @@ window.addEventListener("load", function(){
 setInterval(function(){
 followersNum++;
 followers.innerHTML = followersNum + "<br> <b> Followers </b>";
-}, 10);
+}, 1000);
 
 setInterval(function(){
 followingNum++;
