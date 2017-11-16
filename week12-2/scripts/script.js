@@ -35,7 +35,7 @@ followers.innerHTML = followersNum + "<br> <b> Followers </b>";
 setInterval(function(){
 followingNum++;
 following.innerHTML = followingNum + "<br> <b> Following </b>";
-}, 6000);
+}, 5000);
 });
 
 /* ----------- Themes Buttons -------------- */
