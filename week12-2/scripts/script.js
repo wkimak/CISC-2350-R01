@@ -40,25 +40,25 @@ following.innerHTML = followingNum + "<br> <b> Following </b>";
 /* ----------- Themes Buttons -------------- */
 themesDiv.addEventListener("click", function(event){
 if(event.target == theme1){
-  picsContainer.classList.add("rotateContainer");
+  picsContainer.classList.add("animateContainer");
   setTimeout(function(){
-    picsContainer.classList.remove("rotateContainer");
+    picsContainer.classList.remove("animateContainer");
   },3000);	
   nav.style.backgroundColor = "";
   body.style.backgroundColor = "";
   picsContainer.style.backgroundColor = "";
 } else if (event.target == theme2){
-	picsContainer.classList.add("rotateContainer");
+	picsContainer.classList.add("animateContainer");
 	setTimeout(function(){
-    picsContainer.classList.remove("rotateContainer");
+    picsContainer.classList.remove("animateContainer");
   },3000);	
 	nav.style.backgroundColor = "green";
 	body.style.backgroundColor = "black";
 	picsContainer.style.backgroundColor = "white";
 } else if (event.target == theme3){
-	picsContainer.classList.add("rotateContainer");
+	picsContainer.classList.add("animateContainer");
 	setTimeout(function(){
-    picsContainer.classList.remove("rotateContainer");
+    picsContainer.classList.remove("animateContainer");
   },3000);	
 	nav.style.backgroundColor = "white";
 	body.style.backgroundColor = "blue";
