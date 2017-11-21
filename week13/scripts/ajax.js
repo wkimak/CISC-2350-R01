@@ -2,25 +2,18 @@
 
 $("document").ready(function(){
 	
-	//change Access depending on theme clicked
-	var apiAccess = false;
-
- $("#theme3").on("click", function(event){
-       apiAccess = true;
-       checkStatus();
+// set APItheme button value to "on" so AJAX will work only on API Theme
+  $("#themes").click(function(event){   
+    if($(event.target).is($("#theme3"))){
+       $("#theme3").attr("value","on");
+   }else{
+    $("#theme3").attr("value", "off");
+   }
     });
 
- $("#theme2").on("click", function(){
-   apiAcces = false;
-    checkStatus();
- });
-
-// core function
- function checkStatus(){
-
-if(apiAccess){
+//SearchBtn event listener
 $("#searchBtn").on("click", function(event){
-
+if($("#theme3").val() == "on"){
 var searchTerm = $("#search").val();
 console.log(searchTerm);
 
@@ -30,23 +23,20 @@ var url="https://api.flickr.com/services/feeds/photos_public.gne?tags=" + search
 
 //callback function
 function showPhotos(data){
-
-	var showHTML = "<ul id='ajaxPhotos'>";
+	
+var showHTML = "<ul id='ajaxPhotos'>";
 $.each(data.items, function(index,photo){
 showHTML += "<li> <a href='" + photo.link + "''>";
 showHTML+= "<img src='" + photo.media.m + "'> </a> </li>"; 
 }); //each loop
 showHTML +="</ul>";
-$(".container_12").html(showHTML);
+$(".apiContainer").html(showHTML);
 
 };// showPhotos function
 
 //GetJSON method
 $.getJSON(url, showPhotos);
 
-
-}); //searchBtn click event
 }
-}
-
-}); //document.ready function
+}); 
+}); 
