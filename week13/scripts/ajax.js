@@ -2,6 +2,9 @@
 
 $("document").ready(function(){
 	
+
+
+
 // set APItheme button value to "on" so AJAX will work only on API Theme
   $("#themes").click(function(event){   
     if($(event.target).is($("#theme3"))){
@@ -23,8 +26,8 @@ var url="https://api.flickr.com/services/feeds/photos_public.gne?tags=" + search
 
 //callback function
 function showPhotos(data){
-	
-var showHTML = "<ul id='ajaxPhotos'>";
+
+	var showHTML = "<ul id='ajaxPhotos'>";
 $.each(data.items, function(index,photo){
 showHTML += "<li> <a href='" + photo.link + "''>";
 showHTML+= "<img src='" + photo.media.m + "'> </a> </li>"; 
