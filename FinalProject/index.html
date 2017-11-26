@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title> Portfolio </title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gafata|Happy+Monkey|Lalezar|Source+Sans+Pro" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+  <script src="javascript/skills.js" type="text/javascript"> </script>
+</head>
+
+<body>
+
+<!-- NavBar -->
+<nav id="navBar">
+  <span class="main-nav">
+  <ul>
+    <li> <a href="#intro" alt="HOME"> <i class="fa fa-home fa-2x" aria-hidden="true"></i></a> </li>
+    <li> <a href="#projects-container"> <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i> </a> </li>
+    <li> <a href="#contact-form-main"> <i id="contact-icon" class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>  </a></li>
+   </ul> 
+   </span>
+   <span class="sites-nav"> 
+    <ul>
+    <li> <a href="https://github.com/wkimak" target="_blank"> <i class="fa fa-github fa-2x" aria-hidden="true"></i> </a> </li>
+    <li> <a href="https://www.linkedin.com/in/william-kimak" target="_blank"> <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i> </a> </li>
+    </ul>
+   </span> 
+  </ul>
+</nav>
+
+<!-- Intro Message -->
+<header class="header-container">
+  <div id="header-content">
+    <div id="intro"></div> 
+  </div>
+  
+  <!-- CONTACT BUTTON -->
+  <button id="contactBtn" type="button"> CONTACT </button>
+
+     <!-- Contact Form-main -->
+  <div id="main-form-container">   
+    <form id="contact-form-main">
+      <input type="text" placeholder="Name" id="name">
+      <input type="email" placeholder="Email" id="email">
+      <input type="text" placeholder="Subject" id="subject">
+      <textarea placeholder="Message" id="message"></textarea>
+      <input type="button" value="Send" id="send"> 
+    </form> 
+  </div>  
+
+
+  <div id="skills-container">
+    <button type="button" class="btn-glow" id="skills-btn"> My Skills </button>
+    <div id="skills">
+      <h2> My Skills </h2>
+      <button id="exitBtn"> Exit </button>
+        <div id="html5-container">
+           <p> HTML5 </p>
+           <div class="progress-bar"> </div>
+        </div>
+        <div id="css3-container">
+           <p> CSS3 </p>
+           <div class="progress-bar"> </div>
+        </div>
+        <div id="bootstrap4-container">
+           <p> Bootstrap4 </p>
+           <div class="progress-bar"> </div>
+        </div>
+        <div id="sass-container">
+           <p> Sass </p>
+           <div class="progress-bar"> </div>
+        </div>
+        <div id="javascript-container">
+           <p> Vanilla-Javascript </p>
+           <div class="progress-bar"> </div>
+        </div>
+        <div id="jquery-container">
+           <p> JQuery </p>
+           <div class="progress-bar"> </div>
+        </div>
+        <div id="react-container">
+           <p> ReactJS </p>
+           <div class="progress-bar"> </div>
+        </div>
+    </div>
+  </div>  
+</header>
+
+    <!-- Contact Form mobile -->
+   <form id="contact-form-mobile">
+      <input type="text" placeholder="Name" id="name">
+      <input type="email" placeholder="Email" id="email">
+      <input type="text" placeholder="Subject" id="subject">
+      <textarea placeholder="Message" id="message"></textarea>
+      <input type="button" value="Send" id="send"> 
+    </form> 
+
+
+<!-- About Section -->
+<div id="about-container">
+
+<div id="about-me">
+  <h1> About Me </h1>
+  <p> I am a student at Fordham University, graduating in December! I am looking for full-time work as a web developer. I have been coding for the last year and am comfortable with HTML4, CSS3, Bootstrap4, SCSS, vanilla Javascript, JQuery, and React. I am a quick learner, hard worker, and am passionate about this field. </p>
+</div>
+
+
+</div>
+
+
+  <div id="triangle-down"> </div>
+
+
+
+
+  <!-- Project Gallery -->
+  <div id="projects-container">
+    <h1> My Projects </h1>
+      <article id="projects-gallery">
+        
+        <div class="projects">
+           <img src= "file:///Users/williamkimak/Desktop/Screen%20Shot%202017-11-14%20at%204.06.45%20PM.png"> 
+       
+          <div value = "0" class="projects-content">
+            <h3> CSS3 Animation </h3>
+            <p> I used pure CSS3 animations. </p>
+          </div>
+        </div> 
+
+
+        
+        <div class="projects">
+           <img src= "img/simon.png"> 
+
+          <div value = "1" class="projects-content">
+            <h3> Simon Game </h3>
+            <p> I built this app using vanilla javascript. The biggest challenge was timing the button animations correctly. SetInterval/SetTimeOut methods were heavily used, along with .push() and .splice() array methods to keep track of user input. </p>
+          </div>  
+        </div>  
+
+        
+
+        <div class="projects">
+           <img src= "img/tic-tac-toe.png"> 
+
+          <div value = "2" class="projects-content">
+            <h3> Tic-Tac-Toe </h3>
+            <p> I built this app using vanilla javascript. I got a lot of practice with scope between functions and experienced how useful arrays are in storing/keeping track of data. In order to find the winner, I looped through an object of arrays consisting of winning patterns and used conditionals to test if any patterns matched the board. </p>
+          </div>
+        </div> 
+   
+
+
+        <div class="projects">
+          <img src= "img/regexForm.png">
+
+          <div value = "3" class="projects-content">
+            <h3> Regex Form </h3>
+            <p> This project gave me practice with regex expressions. I used the .test() method to test if input values matched the given regex expression. If .test() returned false, the description would show. Also, I used the .replace() method to format the telephone number.   </p>
+          </div>  
+        </div>
+   
+
+
+        <div class="projects">
+           <img src= "file:///Users/williamkimak/Desktop/Screen%20Shot%202017-10-06%20at%207.41.25%20PM.png"> 
+
+          <div value = "4" class="projects-content">
+            <h3> Random Quotes </h3>
+            <p> I built this app to practice looping through an array of quotes. I used Math.floor(Math.random)()*array.length) so the screen would output a random quote on each click event. Also, I learned how simple Jquery makes for certain animations. This project was easy to build but got me more comfortable with Jquery animations, conditionals, loops, and event listeners. </p>
+          </div> 
+        </div>
+     
+
+
+        <div class="projects">
+          <img src= "img/flickrAPI.png"> 
+        
+          <div value = "5" class="projects-content">
+            <h3> Flickr API </h3>
+            <p> I built this app using Jquery's $.getJSON method, along with .$each to loop through and extract images/links in my callback function. I experimented with both jQuery and vanilla javascript, and got a better understanding of the difference between JSON and XML. </p>
+          </div>
+        </div>
+     
+
+
+        <div class="projects">
+          <img src= "file:///Users/williamkimak/Desktop/Screen%20Shot%202017-10-06%20at%207.30.11%20PM.png"> 
+
+          <div value = "6" class="projects-content">
+            <h3> Wikipedia Viewer </h3>
+            <p> This API project was a bigger challenge than the Flickr API. I was having trouble requesting JSON data so learned how to incorpate JSONP. Initially, the server was not allowing me to access the data with plain JSON. Although I learned that I can request data in my request URL, I prefer to make a seperate object to make the three essential steps in API .get() requests more clear for myself. </p>
+          </div>
+        </div>
+     
+
+
+        <div class="projects">
+          <img src= "file:///Users/williamkimak/Desktop/Screen%20Shot%202017-10-06%20at%207.42.10%20PM.png"> 
+
+          <div value = "7" class="projects-content">
+            <h3> Weather API </h3>
+            <p> lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler. </p>
+          </div>
+        </div>
+      
+
+
+        <div class="projects">
+          <img src ="file:///Users/williamkimak/Desktop/Screen%20Shot%202017-10-06%20at%207.28.35%20PM.png"> 
+
+          <div value = "8" class="projects-content">
+            <h3> JavaScript Calculator </h3>
+            <p> I built this app using vanilla JavaScript. I used event delegation to target click events. I learned to utilize button values to input the event onto the calculator screen. I then used regular expressions to test which operation to perform. Through this process, I played around with array methods like .split(), .map(), .filter(), and .reduce(). Ultimately, I ended up parsing the array of input to a string using .toString() and then using .eval() to perform the calculation. </p>
+          </div>
+        </div>
+     
+
+
+        <div class="projects">
+           <img src= "file:///Users/williamkimak/Desktop/Screen%20Shot%202017-10-06%20at%207.42.55%20PM.png"> 
+
+          <div value = "9" class="projects-content">
+            <h3> Web Programming Midterm </h3>
+            <p> lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler.lorem ipsum doler. </p>
+          </div>
+        </div>   
+    
+      </article>
+   </div>
+</div>
+
+<script src="javascript/projects.js" type="text/javascript"> </script>
+<script type="text/javascript" src="javascript/script.js"> </script>
+</body>
+
+
+
+</html>
