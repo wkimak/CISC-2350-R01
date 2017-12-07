@@ -48,17 +48,13 @@ function Circle(x,y,dx,dy,radius,hoverColor){
    this.dx = dx;
    this.dy = dy;
    this.radius = radius;
-   this.color = Math.floor(Math.random() * ((2-0)+1) + 1);
+   this.color = "rgb(76,252,216)";
    
    this.draw = function(){ 
 
      c.beginPath();
      c.arc(this.x,this.y,this.radius,0,Math.PI*2, false);
-     if(this.color == 1 || this.color == 2){
-     c.strokeStyle = "rgb(76,252,216)";
-   } else if(this.color == 3){
-    c.strokeStyle = "rgb(5,47,90)";
-   }
+     c.strokeStyle = this.color;
     c.lineWidth = 2;
      c.stroke();
 }
