@@ -1,6 +1,5 @@
 
-/* ---------- Styles for all Screen Sizes ------------- */
-
+/* -------------- Styles for all Screen Sizes ------------------ */
 *{
 	box-sizing: border-box;
 }
@@ -14,47 +13,72 @@ body{
 	margin: 0px;
 }
 
-/* -----------  NAVBAR ------------- */
-
-
-/* HEADER Styling */
-.header-container{
-	background-color:rgb(228,252,249);
-	width: 100%;
-	height: 800px;
-	padding: 0px 50px; 
+/* --------------- NavBar Styling ---------------- */
+  #navBar{
+  margin-top: -18px;
+  width: 100%;
+  height: 40px;
+  list-style: none;
+  font-family: 'Gafata', sans-serif;
+  background-color: rgb(5,47,90);
+  z-index: 5;
 }
 
-#header-content{
-	width: 450px;
-	height: 500px;
+#navBar ul{
+	text-align: right;
+}
+
+#navBar li, #navBar a{
+	display: inline-block;
 	position: relative;
-	top: 20%;
+	top: 5px;
+	text-decoration: none;
+	margin-right: 20px;
+	color: rgb(76,252,216);
+}
+
+#navBar a:hover{
+	color: rgba(29,129,229,0.5);
 }
 
 
-/* ---------------- Contact Form --------------- */
-#name, #email{
+
+/* -------------- HEADER Styling ----------------- */
+
+.header-container{
+	background-color: #fcfcfc;
+	width: 100%;
+	height: 92%;
+	min-height: 728px;
+}
+
+
+
+/* ---------------- Contact Form Inputs/textarea/button --------------- */
+.input_name, .input_email{
 	height: 40px;
 	width: 200px;
 	display: inline;
+	border: 1px solid rgb(5,47,90);
 }
 
-#subject{
+.input_subject{
 	height: 40px;
 	width: 402.5px;
 	display: block;
 	margin-top: 5px;
+	border: 1px solid rgb(5,47,90);
 }
 
-#message{
+.input_message{
 	margin-top: 5px;
 	height: 200px;
 	width: 402.5px;
 	display: block;
+	border: 1px solid rgb(5,47,90);
 }
 
-#send{
+#main-send, #mobile-send{
 	width: 100px;
 	height: 40px;
 	margin-top: 5px;
@@ -66,417 +90,57 @@ body{
 	font-family: 'Gafata', sans-serif;
 }
 
-
-/* ------------ About Section ------------ */
-
-hr{
-	background-color: rgb(76,252,216);
-	border: 0;
-    height: 15px;
-    width: 80%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
-#about-container{
-	width: 100%;
-	padding: 100px 100px;
-	background-color: rgb(5,47,90);
-	border-top: 2px solid rgb(76,252,216);
-}
-
-
-#about-me h1{
-	color: rgb(76,252,216);
-	font-family: 'Lalezar', cursive;
-}
-
-#about-me p{
-	line-height: 22px;
-	font-family: 'Gafata', sans-serif;
-}
-
-
-
-
-#triangle-down {
-  width: 100%;
-  height: 0px;
-  border-left: 50vw solid transparent;
-  border-right: 50vw solid transparent;
-  border-top: 75px solid rgb(5,47,90);
-  position: absolute;
-  z-index: 2;
-}
-
-
-/* ----------- Projects Section ---------- */
-
-#projects-container{
-	background-color:rgb(218,238,239);
-	padding-top: 100px;
-	position: relative;
-}
-
-
-#projects-container h1{
-	text-align: center;
-	width: 100%;
-	font-family:'Lalezar', cursive;
-	color: rgb(5,47,90);
-	clear: right;
-}
-
-/* flex grid layour for gallery divs */
-#projects-gallery{
-	padding: 0px 100px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-/* individiual project content */
-.projects {
-	background-color: rgb(5,47,90);
-	border-radius: 5px;
-	box-shadow: 2px 2px 20px;
-	height: 200px;
-	width: 325px;
-	margin-bottom: 30px;
-	border: 1px solid rgb(76,252,216);
-	position: relative;
-}
-
-
-
-/* individual content inside container */
- 
-.projects img{
-	display: block;
-	margin: auto;
-	width: 300px;
-	height: 180px;
-	margin-top: 10px;
-}
-
-/* Project title */
-#projects-gallery h3, #projects-gallery p{
-	font-family: 'Gafata', sans-serif;
-}
-
-@keyframes growContent{
-	from{height:0px;}
-	to{height: 200px;}
-}
-
-.grow-content{
-	animation-name: growContent;
-	animation-duration: 0.5s;
-	height: 200px;
-	
-}
-
-@keyframes shrinkContent{
-	from{height: 200px;}
-	to{height: 0px;}
-}
-
-.shrink-content{
-	animation-name: shrinkContent;
-	animation-duration: 1s;
-	height: 0px;
-}
-
- .projects-content{
- 	display: none;
-	width: 100%;
-	padding-left: 10px;
-	padding-right: 10px;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	color: black;
-	overflow: hidden;
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(41,191,255,0.95)), color-stop(97%, rgba(55,129,126,0.95)), color-stop(100%, rgba(56,128,123,0)));
-}
-
-.projects-content h3{
-	text-align: center;
-	font-size: 32px;
-	margin-top: -2px;
-	margin-bottom: -5px;
-}
-
-
-
-/* ------------------------ Media Queries ------------------------ */
-
-/* -------------- Below 640px ---------- */
-@media only screen and (max-width: 640px){
-	
-#contactBtn, #skillsContainer, #navBar, #skills-container, #contact-form-main input, #contact-form-main textarea {
-	display: none;
-}
-
-#header-content{
-	margin-left: auto;
-	margin-right: auto;
-}
-
- #intro{
-	color: rgb(5,47,90);
-	font-size: 38px;
-	font-family: 'Lalezar', cursive;
-	letter-spacing: 1px;
-	margin-bottom: 40px;
-}
-
-/* Mobile Contact Form */
-#contact-form-mobile{
-    position: absolute;
-	top: 350px;
-	margin-left: 10%;
-	min-width: 450px;
- }
-
-}
-
-
-
-/* ---------- Starting at width 640px ------------ */
-@media only screen and (min-width: 640px){
-
-
-  #navBar{
-  background-color: transparent;
-  width: 100%;
-  height: 50px;
-  padding-right: 100px;
-  position: fixed;
-  display: block;
-  border-bottom: 0.5px solid rgb(76,252,216);
-  z-index: 3;
-}
-
-#navBar:hover{
-	background-color: rgb(5,47,90);
-}
-
-#navBar .main-nav ul{
-	list-style: none;
-	display: inline-block;
-	position: relative;
-	bottom: 5px;
-}
-
-#navBar .sites-nav ul{
-	list-style: none;
-	display: inline-block;
-	float: right;
-	position: relative;
-	bottom: 5px;
-}
-
-#navBar i{
-	color: rgb(76,252,216)
-}
-
-#navBar i:hover {
-	color: rgb(29,129,229);
-}
-
-#navBar .main-nav li{
-  display: inline-block;
-  margin-left: 75px;
-}
-
-#navBar .sites-nav li{
-	display: inline-block;
-	margin-left: 50px;
-	
-}
- 
-
-
-/* ----------------- Intro "Welcome" -------------- */
-
-
-#header-content{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#header-content #intro{
-	color: rgb(5,47,90);
-	font-size: 42px;
-	font-family: 'Lalezar', cursive;
-	letter-spacing: 1px;
-	margin-bottom: 40px;
-	position: absolute;
-	top: -520px;
-	min-width: 550px;
-}
-
-
-
-/* Letter animation */
-@keyframes animateLetters{
-	from {
-		position: absolute;
-		top: -520px;
-	}
-
-	to{
-        position: relative;
-        top: 450px; 
-	}
-}
-
-.animateLetter{
-	animation-name: animateLetters;
-	animation-duration: 1s;
-	font-size: 60px;
-	font-family: 'Lalezar', cursive;
-	letter-spacing: 1px;
-	position: relative;
-	top: 450px;
-	
-}
-
-.animateLetter:hover{
-	color: rgb(76,252,216);
-}
-
-
-#header-content button{
-	position: absolute;
-	top: 275px;
-	left: 10%;
-}
-
-/* Contact Btn */
-#contactBtn{
-    height: 300px;
-	width: 30%;
-	border-radius: 10px;
-	background-color: transparent;
-	color: rgba(29,129,229,0.5);
-	display: block;
-	position: absolute;
-	top: 325px;
-	left: 13%;
-	border: 30px solid rgba(29,129,229,0.5);
-	font-family: 'Gafata', sans-serif;
-	font-size: 38px;
-	box-shadow: 0px 0px 0px 5px rgb(76,252,216);
-}
-
-#contactBtn:hover{
-	border-radius: 100%;
-	border-color: rgb(76,252,216);
-	color: rgb(76,252,216);
-}
-
-
-
-
-/* ---------------- Contact Form --------------- */
-
-
-#contact-form-mobile{
-	display: none;
-}
-
-#contact-form-main{
-	display: none;
-	background-color: rgba(5,47,90,0.8);
-	height: 800px;
-	width: 500px;
-	padding-top: 250px;
-	padding-left: 40px;
-	padding-right: 40px;
-	position: fixed;
-	top: 0px;
-	z-index: 6;
-}
-
-#main-form-container{
-	width: 500px;
-    float:right;
-    margin-right: -50px;
-}
-
-
-
-/* ---------- SKILLS ANIMATION STYLING -----------*/
-#skills-btn{
-	position: absolute;
-	top: 325px;
-	left: 55%;
-	height: 300px;
-	width: 30%;
-	border-radius: 10px;
-	border: 30px solid rgb(5,47,90);;
-	background-color: transparent;
-	color: rgb(5,47,90);;
-	font-family: 'Gafata', sans-serif;
-	font-size: 38px;
-	box-shadow: 0px 0px 0px 5px rgb(76,252,216);
-}
-
-#exitBtn{
-	height: 40px;
-	width: 100px;
-	background-color: transparent;
-	border: 3px solid rgb(76,252,216);
-	color: rgb(76,252,216);
-	position: absolute;
-	top: 5px;
-	left: 5px;
-}
-
-#skills-btn:hover{
-	border-radius: 50%;
-	border-color: rgb(76,252,216);
-	color: rgb(76,252,216);
-}
-
+/* ------- Skills Section ------- */
 
 #skills-container{
-	height: 100%;
 	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 #skills{
 	background-color: rgb(5,47,90);
-	height: 60%;
-	width: 60%;
-	margin-right: auto;
-	margin-left: auto;
-	position: relative;
-	bottom: 45%;
-	display: none;
-	padding-top: 5px;
-	padding-bottom: 20px;
+	height: 500px;
+	width: 70%;
+	padding-top: 1%;
+	padding-bottom: 60px;
 }
 
-#skills h2{
+#skills-description{
+	background-color: rgb(5,47,90) ;
+	width: 30%;
+	height: 500px;
+	padding-top: 150px;
+	padding-right: 30px;
+}
+
+#skills-description p{
+	color: white;
+	line-height: 25px;
+	font-size: 16px;
+	font-family: 'Gafata', sans-serif;
+}
+
+/* Title */
+#skills h1{
 	text-align: center;
-	font-family: 'Lalezar', cursive;
+	font-family: 'Ramabhadra', sans-serif;
 	color: rgb(76,252,216);
-	margin-bottom: -10px;
 }
 
+/* grey backgrounds */
 #html5-container, #css3-container, #bootstrap4-container, #sass-container, #javascript-container, #jquery-container, #react-container{
 	background-color: grey;
 	height: 9%;
-	width: 85%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
 	position: relative;
 }
 
+/* Individual skill titles */
 #skills p{
 	background-color: grey;
 	background-color: white;
@@ -484,12 +148,13 @@ hr{
 	width: 100px;
 	position: relative;
 	z-index: 1;
-	padding-top: 13px;
+	padding-top: 10px;
 	padding-left: 10px;
 	font-weight: bolder;
 	font-family: 'Gafata', sans-serif;
 }
 
+/* Individual title bars */
 #html5-container p{
 	color: white;
 	background-color: orange;
@@ -521,7 +186,7 @@ hr{
 }
 
 
-
+/* Animation bars */
 .progress-bar{
 	opacity: 0.6;
 	height: 100%;
@@ -529,13 +194,18 @@ hr{
 	position: absolute;
 	top: 0px;
 	z-index: 0;
+	text-align: right;
+	color: white;
+	font-size: 22px;
+	padding-top: 5px;
+	padding-right: 5px;
 }
 
 #html5-container .progress-bar{
 	background-color: orange;
 }
 #css3-container .progress-bar{
-	background-color: blue;
+	background-color: white;
 }
 #bootstrap4-container .progress-bar{
 	background-color: purple;
@@ -555,60 +225,562 @@ hr{
 }
 
 
+/* ----------------- About Section ----------------- */
 
-
-
-
-/* ------------ About Me -------------- */
-#about-me{
-	max-width: 600px;
-}
-
-}
-
-
-
-/* -------- Vertical Navbar -------- */
-/*
-  #navBar{
-  background-color: transparent;
-  width: 60px;
-  height: 100%;
-  position: fixed;
-  display: block;
-  border-right: 0.5px solid rgb(76,252,216);
-  z-index: 3;
-}
-
-#navBar:hover{
+#about-container{
+	width: 100%;
+	height: 0px;
+	padding-top: 40px;
+	padding-bottom: 0px;
+	padding-right: 100px;
+	padding-left: 100px;
 	background-color: rgb(5,47,90);
 }
 
-#navBar .main-nav ul{
-	margin-top: 50px;
+
+#about-container h1{
+	color: rgb(76,252,216);
+	font-family: 'Ramabhadra', sans-serif;
+	text-align: center;
+}
+
+#about-container p{
+	text-align: center;
+	color: white;
+	line-height: 30px;
+	font-family: 'Gafata', sans-serif;
+    overflow: visible;
+}
+
+
+#triangle-down {
+  width: 100%;
+  height: 0px;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 0px solid rgb(5,47,90);
+  position: absolute;
+  z-index: 2;
+}
+
+
+@keyframes growTriangle{
+	from{border-top: 0px solid rgb(5,47,90);}
+	to{border-top: 75px solid rgb(5,47,90);}
+}
+
+.growTriangle{
+	animation-name: growTriangle;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+
+
+/* ----------- Projects Section ---------- */
+
+#projects-container{
+	background-color:#fcfcfc;
+	padding-top: 100px;
+	position: relative;
+}
+
+
+#projects-container h1{
+	text-align: center;
+	width: 100%;
+    font-family: 'Ramabhadra', sans-serif;
+	color: rgb(5,47,90);
+}
+
+/* flex grid layour for gallery divs */
+#projects-gallery{
+	padding: 0px 75px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/* individiual projects */
+.projects {
+	background-color: rgb(5,47,90);
+	border-radius: 5px;
+	box-shadow: 2px 2px 20px;
+	height: 200px;
+	width: 325px;
+	margin-bottom: 30px;
+	border: 1px solid rgb(76,252,216);
+	position: relative;
+}
+
+
+/* individual content inside .projects */
+.projects img{
+	display: block;
+	margin: auto;
+	width: 300px;
+	height: 180px;
+	margin-top: 10px;
+}
+
+/* Project title */
+ #projects-gallery p{
+	font-family: 'Gafata', sans-serif;
+}
+
+/* Animations on hover */
+@keyframes growContent{
+	from{height:0px;}
+	to{height: 200px;}
+}
+
+.grow-content{
+	animation-name: growContent;
+	animation-duration: 0.5s;
+	height: 200px;
+	
+}
+
+@keyframes shrinkContent{
+	from{height: 200px;}
+	to{height: 0px;}
+}
+
+.shrink-content{
+	animation-name: shrinkContent;
+	animation-duration: 1s;
+	height: 0px;
+}
+
+/* Content that pops up on hover */
+ .projects-content{
+ 	display: none;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	overflow: hidden;
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(41,191,255,0.95)), color-stop(100%, rgba(55,129,126,0.95)), color-stop(100%, rgba(56,128,123,0)));
+}
+
+.projects-content h3{
+	font-family: 'Ramabhadra', sans-serif;
+	text-align: center;
+	font-size: 28px;
+	margin-top: -2px;
+	margin-bottom: -15px;
+	color: rgb(5,47,90);
+}
+
+.projects-content a{
+	text-decoration: none;
+	color: white;
+}
+
+/* -------------- FOOTER --------------- */
+footer{
+	width: 100%;
+	height: 200px;
+	margin-top: 20px;
+	background-color: rgb(5,47,90);
+	border-top: 2px solid rgb(76,252,216);
+}
+
+#myPic{
+	height: 100%;
+	width: auto;
+	margin-left: 50px;
+}
+
+footer label{
+	float: right;
+	margin-right: 50px;
+	position: relative;
+	top: 50px;
+}
+
+footer label i, footer label{
+	color: rgb(76,252,216);
+	
+	cursor: pointer;
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce{
+	0%{transform: translateY(0px);}
+	50%{transform: translateY(5px);}
+	100%{transform: translateY(0px);}
+}
+
+/* -----------------------~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~------------------------ */
+/* -----------------------~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~------------------------ */
+
+/* ------------------------ Media Queries ------------------------ */
+
+/* ----------------- Below 640px ---------------- */
+@media only screen and (max-width: 640px){
+
+	/* --------- Elements to Hide ----------- */
+	#contact-form-main input, #contact-form-main textarea, .exitBtn, #form-logos, #contactBtn, #myCanvas, #skills-description {
+		display: none;
+	}
+
+/*  --------- Header ---------- */
+#header-content{
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 300px;
+	position: relative;
+	top: 50px;
+}
+
+ #intro{
+	color: rgb(5,47,90);
+	font-size: 38px;
+	font-family: 'Ramabhadra', sans-serif;
+	letter-spacing: 1px;
+}
+
+#intro2{
+	color: rgb(76,252,216);
+	font-size: 20px;
+	font-family: 'Gafata', sans-serif;
+}
+
+/* ------- Skills section ------- */
+#skills{
+	width: 100%;
+}
+
+/* ------- About Section ----- */
+#about-container{
+	padding: 0px 20px;
+}
+
+/* ----------- Mobile Contact Form ----------- */
+	#mobile-form-container{
+	width: 415px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 40px;
+   }
+
+}
+
+
+/* -----------------------~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~------------------------ */
+/* -----------------------~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~------------------------ */
+
+/* ------------------------- Between 640px and 897px ------------------------ */
+@media only screen and (min-width: 640px) and (max-width: 897px){
+
+/* ---- Adjust Header container height --- */
+
+/* ---------- Elements to hide ----------- */	
+#skills-description, #myCanvas, #contact-form-mobile{
+	display: none;
+}
+
+
+
+/* ----------- Header ------------ */
+#header-content{
+	width: 450px;
+	margin-left: 10%;
+	min-width: 600px;
+	position: absolute;
+	top: 10%;
+}
+
+ #intro{
+	color: rgb(5,47,90);
+	font-size: 58px;
+	font-family: 'Ramabhadra', sans-serif;
+	letter-spacing: 1px;
+}
+
+#intro2{
+	color: rgb(76,252,216);
+	font-size: 28px;
+	font-family: 'Gafata', sans-serif;
+}
+
+#contactBtn{
+    height: 250px;
+	width: 300px;
+	background-color: rgba(255,255,255,0.5);
+	color: rgb(5,47,90);
+	display: block;
+	position: absolute;
+	top: 475px;
+	right: 8%;
+	border: 8px solid rgb(5,47,90);
+	font-family: 'Gafata', sans-serif;
+	font-size: 38px;
+	box-shadow: 0px 0px 0px 5px rgb(76,252,216);
+	font-weight: bolder;
+}
+
+#contactBtn:hover{
+	border-color: rgb(76,252,216);
+	color: rgb(76,252,216);
+}
+
+
+/* -------- Skills section --------- */
+#skills{
+	width: 100%;
+}
+
+/* ---------- About section ------- */
+#about-container{
+	padding: 0px 20px;
+}
+
+#about-container p {
+	font-size: 22px;
+}
+
+
+/* --------- Main Contact Form -------- */
+#float-main-form{
+	float: right;
+	width: 500px;
+}
+
+
+#main-form-container{
+	height: 100%;
+	width: 500px;
+	top: 0px;
+	z-index: 6;
+	position: fixed;
+	padding-top: 200px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: rgba(5,47,90,1.0);
+	display: none;
+	overflow: scroll;
+}
+
+
+#form-logos i{
+	color: rgb(76,252,216);
+	position: absolute;
+}
+
+#linkedInIcon{
+top: 550px;
+left: 50px;
+}
+
+#githubIcon{
+	top: 550px;
+	left: 125px;
+}
+
+#form-logos li{
 	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
 }
 
-#navBar .sites-nav ul{
-	margin-top: 275px;
+.exitBtn{
+	height: 40px;
+	width: 100px;
+	background-color: transparent;
+	border: 3px solid rgb(76,252,216);
+	color: rgb(76,252,216);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+}
+ 
+
+/* -----------------------~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~------------------------ */
+/* -----------------------~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~------------------------ */
+
+/* ----------------------------- Starting at width 897px --------------------------- */
+@media only screen and (min-width: 897px){
+
+/* ----------------- HEADER -------------- */
+
+#header-content{
+	width: 450px;
+	margin-left: 10%;
+	min-width: 600px;
+	position: relative;
+	top: 20%;
+}
+
+#header-content #intro{
+	color: rgb(5,47,90);
+	font-size: 58px;
+	font-family: 'Ramabhadra', sans-serif;
+	letter-spacing: 1px;
+}
+
+
+#intro2{
+	color: rgb(76,252,216);
+	font-size: 28px;
+	font-family: 'Gafata', sans-serif;
+	position: relative;
+	top: 100px;
+	left: -600px;
+}
+
+
+/* ------------- Intro Animations -------------- */
+
+
+@keyframes animateWelcome{
+	from{
+		position: absolute;
+		top: -500px;
+	}
+	to{
+		position: absolute;
+		top: -125px;
+	}
+}
+
+.animateWelcome{
+	animation-name: animateWelcome;
+	animation-duration: 2s;
+	animation-play-state: forwards;
+	position: absolute;
+	top: -125px;
+}
+
+
+@keyframes animateIntro{
+	from{
+		position: absolute;
+        left: -600px;
+	}
+
+	to{
+		position: absolute;
+		left: 50px;
+	}
+}
+
+.animateIntro{
+	animation-name: animateIntro;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	position: absolute;
+	left: 50px;
+}
+
+
+
+/* ------------ Canvas ------------ */
+
+#myCanvas{
+	position: absolute;
+	right: 0;
+	top: 40;
+	background: transparent;
+}
+
+/* --------- Header Contact Btn -------- */
+
+#contactBtn{
+    height: 250px;
+	width: 300px;
+	background-color: rgba(255,255,255,0.5);
+	color: rgb(5,47,90);
+	display: block;
+	position: absolute;
+	top: 475px;
+	right: 8%;
+	border: 8px solid rgb(5,47,90);
+	font-family: 'Gafata', sans-serif;
+	font-size: 38px;
+	box-shadow: 0px 0px 0px 5px rgb(76,252,216);
+	font-weight: bolder;
+}
+
+#contactBtn:hover{
+	border-color: rgb(76,252,216);
+	color: rgb(76,252,216);
+}
+
+
+/* ---------------- Main Contact Form --------------- */
+
+#contact-form-mobile{
+	display: none;
+}
+
+#float-main-form{
+	float: right;
+	width: 500px;
+}
+
+
+#main-form-container{
+	height: 100%;
+	width: 500px;
+	top: 0px;
+	z-index: 6;
+	position: fixed;
+	padding-top: 200px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: rgba(5,47,90,1.0);
+	display: none;
+	overflow: scroll;
+}
+
+
+#form-logos i{
+	color: rgb(76,252,216);
+	position: absolute;
+}
+
+#linkedInIcon{
+top: 550px;
+left: 50px;
+}
+
+#githubIcon{
+	top: 550px;
+	left: 125px;
+}
+
+#form-logos li{
 	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
 }
 
-#navBar i{
-	color: rgb(76,252,216)
+.exitBtn{
+	height: 40px;
+	width: 100px;
+	background-color: transparent;
+	border: 3px solid rgb(76,252,216);
+	color: rgb(76,252,216);
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 
-#navBar i:hover {
-	color: rgb(29,129,229);
+/* ---------- ABOUT Section ------ */
+#about-container p{
+	font-size: 22px;
 }
 
-#navBar .main-nav li{
-  margin-top: 100px;
-  margin-left: -25px;
 }
-
-#navBar .sites-nav li{
-	margin-top: 30px;
-	margin-left: -25px;
-}
-*/
