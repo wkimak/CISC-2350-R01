@@ -6,9 +6,8 @@ $("document").ready(function(){
 $("#contact-form-main").submit(function(event){
 event.preventDefault();
 
-//Send data to EmailJS Service
-
 //Send information to EmailJS
+  /*
 const service_id = 'gmail';
 const template_id = 'template_rco7VS5B';
 const template_params = {
@@ -19,7 +18,7 @@ const template_params = {
 }
 
 emailjs.send(service_id,template_id,template_params);
-
+*/
 
 
 //"Email Sent!"" text after form is submitted
@@ -47,6 +46,7 @@ event.preventDefault();
 console.log("it works");
 
 //Send information to EmailJS
+  /*
 const service_id = 'gmail';
 const template_id = 'template_rco7VS5B';
 const template_params = {
@@ -57,7 +57,7 @@ const template_params = {
 }
 
 emailjs.send(service_id,template_id,template_params);
-
+*/
 
 //"Email Sent!"" text after form is submitted
 if($("#mobile-name").val() != "" && $("#mobile-email").val() != "" && $("#mobile-message").val() != ""){
