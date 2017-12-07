@@ -7,14 +7,16 @@ var animation = document.getElementsByClassName("grow-content");
 var content = document.getElementsByClassName("projects-content");
 var a = document.querySelectorAll(".projects a");
 var img = document.querySelectorAll(".projects img");
+var growContent = document.getElementsByClassName(".grow-content")[0];
 
 
-
+//Loop through .projects so I have access to all of the elements during event
 for(var i = 0; i<projects.length; i++){	
 projects[i].addEventListener("mouseover", function(event){
 
 var target = event.target;
 
+//if event.target is the border of the container or the image, animate
 if(target.className == "projects"){
 target.childNodes[3].style.display = "block";
 target.childNodes[3].classList.remove("shrink-content");
@@ -27,15 +29,13 @@ target.childNodes[3].classList.add("grow-content");
 });
 }
 
-
+// Mouseleave event handler
 for(var x=0; x< content.length; x++){
 content[x].addEventListener("mouseleave", function(event){
 
 var target = event.target;
 
-target.classList.remove("grow-content");
-target.classList.add("shrink-content");
-
+target.classList.replace("grow-content", "shrink-content");
 
 });
 }
