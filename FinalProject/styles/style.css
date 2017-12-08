@@ -1,5 +1,5 @@
 
-/* -------------- Styles for all Screen Sizes ------------------ */
+/* -------------- General Styles ------------------ */
 *{
 	box-sizing: border-box;
 }
@@ -224,6 +224,83 @@ body{
 	background-color: lightblue;
 }
 
+/* ---------- Main form ------------- */
+
+#float-main-form{
+	float: right;
+	width: 500px;
+}
+
+
+#main-form-container{
+	height: 100%;
+	width: 500px;
+	top: 0px;
+	z-index: 6;
+	position: fixed;
+	padding-top: 200px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: rgba(5,47,90,1.0);
+	display: none;
+	overflow: scroll;
+}
+
+
+#form-logos i{
+	color: rgb(76,252,216);
+	position: absolute;
+}
+
+#linkedInIcon{
+top: 550px;
+left: 50px;
+}
+
+#githubIcon{
+	top: 550px;
+	left: 125px;
+}
+
+#form-logos li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.exitBtn{
+	height: 40px;
+	width: 100px;
+	background-color: transparent;
+	border: 3px solid rgb(76,252,216);
+	color: rgb(76,252,216);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+/* --------------- Contact Btn --------------- */
+#contactBtn{
+    height: 250px;
+	width: 300px;
+	background-color: rgba(255,255,255,0.5);
+	color: rgb(5,47,90);
+	display: block;
+	position: absolute;
+	top: 475px;
+	right: 8%;
+	border: 8px solid rgb(5,47,90);
+	font-family: 'Gafata', sans-serif;
+	font-size: 38px;
+	box-shadow: 0px 0px 0px 5px rgb(76,252,216);
+	font-weight: bolder;
+}
+
+#contactBtn:hover{
+	border-color: rgb(76,252,216);
+	color: rgb(76,252,216);
+}
+
 
 /* ----------------- About Section ----------------- */
 
@@ -427,7 +504,7 @@ footer label i, footer label{
 @media only screen and (max-width: 640px){
 
 	/* --------- Elements to Hide ----------- */
-	#contact-form-main input, #contact-form-main textarea, .exitBtn, #form-logos, #contactBtn, #myCanvas, #skills-description {
+	#contact-form-main input, #contact-form-main textarea, .exitBtn, #form-logos, #contactBtn, #myCanvas, #skills-description, #float-main-form {
 		display: none;
 	}
 
@@ -513,26 +590,6 @@ footer label i, footer label{
 	font-family: 'Gafata', sans-serif;
 }
 
-#contactBtn{
-    height: 250px;
-	width: 300px;
-	background-color: rgba(255,255,255,0.5);
-	color: rgb(5,47,90);
-	display: block;
-	position: absolute;
-	top: 475px;
-	right: 8%;
-	border: 8px solid rgb(5,47,90);
-	font-family: 'Gafata', sans-serif;
-	font-size: 38px;
-	box-shadow: 0px 0px 0px 5px rgb(76,252,216);
-	font-weight: bolder;
-}
-
-#contactBtn:hover{
-	border-color: rgb(76,252,216);
-	color: rgb(76,252,216);
-}
 
 
 /* -------- Skills section --------- */
@@ -549,60 +606,6 @@ footer label i, footer label{
 	font-size: 22px;
 }
 
-
-/* --------- Main Contact Form -------- */
-#float-main-form{
-	float: right;
-	width: 500px;
-}
-
-
-#main-form-container{
-	height: 100%;
-	width: 500px;
-	top: 0px;
-	z-index: 6;
-	position: fixed;
-	padding-top: 200px;
-	padding-left: 40px;
-	padding-right: 40px;
-	background-color: rgba(5,47,90,1.0);
-	display: none;
-	overflow: scroll;
-}
-
-
-#form-logos i{
-	color: rgb(76,252,216);
-	position: absolute;
-}
-
-#linkedInIcon{
-top: 550px;
-left: 50px;
-}
-
-#githubIcon{
-	top: 550px;
-	left: 125px;
-}
-
-#form-logos li{
-	list-style: none;
-	display: inline-block;
-	margin-right: 30px;
-}
-
-.exitBtn{
-	height: 40px;
-	width: 100px;
-	background-color: transparent;
-	border: 3px solid rgb(76,252,216);
-	color: rgb(76,252,216);
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
 
 }
  
@@ -695,29 +698,6 @@ left: 50px;
 	background: transparent;
 }
 
-/* --------- Header Contact Btn -------- */
-
-#contactBtn{
-    height: 250px;
-	width: 300px;
-	background-color: rgba(255,255,255,0.5);
-	color: rgb(5,47,90);
-	display: block;
-	position: absolute;
-	top: 475px;
-	right: 8%;
-	border: 8px solid rgb(5,47,90);
-	font-family: 'Gafata', sans-serif;
-	font-size: 38px;
-	box-shadow: 0px 0px 0px 5px rgb(76,252,216);
-	font-weight: bolder;
-}
-
-#contactBtn:hover{
-	border-color: rgb(76,252,216);
-	color: rgb(76,252,216);
-}
-
 
 /* ---------------- Main Contact Form --------------- */
 
@@ -725,58 +705,6 @@ left: 50px;
 	display: none;
 }
 
-#float-main-form{
-	float: right;
-	width: 500px;
-}
-
-
-#main-form-container{
-	height: 100%;
-	width: 500px;
-	top: 0px;
-	z-index: 6;
-	position: fixed;
-	padding-top: 200px;
-	padding-left: 40px;
-	padding-right: 40px;
-	background-color: rgba(5,47,90,1.0);
-	display: none;
-	overflow: scroll;
-}
-
-
-#form-logos i{
-	color: rgb(76,252,216);
-	position: absolute;
-}
-
-#linkedInIcon{
-top: 550px;
-left: 50px;
-}
-
-#githubIcon{
-	top: 550px;
-	left: 125px;
-}
-
-#form-logos li{
-	list-style: none;
-	display: inline-block;
-	margin-right: 30px;
-}
-
-.exitBtn{
-	height: 40px;
-	width: 100px;
-	background-color: transparent;
-	border: 3px solid rgb(76,252,216);
-	color: rgb(76,252,216);
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
 
 /* ---------- ABOUT Section ------ */
 #about-container p{
@@ -784,4 +712,3 @@ left: 50px;
 }
 
 }
-
